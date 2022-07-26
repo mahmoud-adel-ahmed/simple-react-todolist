@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: 0;
+  outline: 0;
+  text-transform: capitalize;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(60, 46, 171);
+}
+
+.container {
+  width: 90vw;
+  max-width: 45rem;
+  text-align: center;
+}
+
+.container h2 {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 2rem;
+}
+.container div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 4rem;
+}
+
+.container .no-items {
+  padding: 0.7rem 0;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.container div {
+  background: #fff;
+  color: #555;
+}
+
+.container .head,
+form button {
+  background: rgb(83, 162, 236);
+  color: #fff;
+}
+
+.container div span {
+  width: 100%;
+  padding: 0.7rem 0;
+  border: 0.01rem solid #eee;
+}
+
+.action {
+  color: rgb(244, 17, 17);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 4rem;
+}
+
+form input {
+  padding: 0.7rem 0.3rem;
+  border: 0.01rem solid #eee;
+  color: #555;
+  width: 100%;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 83%;
+  }
+}
